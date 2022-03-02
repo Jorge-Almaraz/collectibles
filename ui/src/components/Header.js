@@ -20,7 +20,7 @@ function Header () {
     <Navbar bg="light" expand="lg">
       <Navbar.Brand>
         <Link to="/" className={'navbar-brand'}>
-          Sample serverless project!
+          Sample serverless project
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

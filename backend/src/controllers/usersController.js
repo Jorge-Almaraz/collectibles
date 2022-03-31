@@ -1,5 +1,8 @@
 
 const ServiceFactory = require('../services/Factory')
+const {respondWithError}= require("../utils/response")
+const Boom = require("@hapi/boom")
+const { required } = require('joi')
 
 async function getUsers (req, res) {
   try {
@@ -7,8 +10,7 @@ async function getUsers (req, res) {
     const users = await usersService.listUsers()
     res.json(users)
   } catch (err) {
-    console.error(err)
-    res.status(500).send(err.toString())
+    return respondWithError(err, res)
   }
 }
 

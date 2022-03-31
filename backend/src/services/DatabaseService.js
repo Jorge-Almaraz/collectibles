@@ -11,7 +11,8 @@ class DatabaseService {
   getConnection () {
     return new Sequelize(config.database, config.username, config.password, {
       host: config.host,
-      dialect: config.dialect
+      dialect: config.dialect, 
+      debug: true
     })
   }
   loadModels (connection) {

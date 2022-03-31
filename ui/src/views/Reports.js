@@ -10,6 +10,7 @@ import SamplePieChart from "../components/SamplePieChart";
 export default function Reports() {
   return (
     <Container>
+      hey yo
       <SampleLineChart
         dataSource={ async (setData) => {
           const response = await ReportsService.getDataForHistory()

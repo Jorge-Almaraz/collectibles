@@ -8,7 +8,7 @@ function getJWTSecret () {
 
 function generateAccessToken(user) {
   const secret = getJWTSecret()
-  return jwt.sign(user, secret, { expiresIn: '1800s' });
+  return jwt.sign(user, secret, { expiresIn: '180m' });
 }
 
 function ensureAuthenticated () {

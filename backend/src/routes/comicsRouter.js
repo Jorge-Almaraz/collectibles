@@ -1,5 +1,4 @@
 
-
 const express = require('express')
 const { validation } = require('../utils/validation')
 const controllerValidations = require('../validations/comics')
@@ -29,3 +28,4 @@ router.delete(
 )
 
 module.exports = router
+

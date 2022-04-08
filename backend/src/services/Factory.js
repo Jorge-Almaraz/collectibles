@@ -3,6 +3,7 @@ const DatabaseService = require('./DatabaseService')
 const AuthService = require('./AuthService')
 const UsersService = require('./UsersService')
 const ComicsService = require('./ComicsService')
+const FiguresService = require('./FigureService')
 
 class ServiceFactory {
   static getServices () {
@@ -17,6 +18,10 @@ class ServiceFactory {
       comics: { 
         serviceClass: ComicsService,
         models: ['Comic']
+      },
+      figures: {
+        serviceClass: FiguresService,
+        models: ['Figure']
       }
     }
   }

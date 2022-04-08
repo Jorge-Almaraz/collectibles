@@ -8,6 +8,7 @@ const healthRouter = require('./routes/healthRouter')
 const authRouter = require('./routes/authRouter')
 const sessionRouter = require('./routes/sessionRouter')
 const comicsRouter = require('./routes/comicsRouter')
+const figuresRouter = require('./routes/figuresRouter')
 
 // This are public endpoints
 router.use('/health', healthRouter)
@@ -19,5 +20,6 @@ router.use(ensureAuthenticated())
 router.use('/session', sessionRouter)
 router.use('/users', usersRouter)
 router.use('/comics', comicsRouter)
+router.use('/figures', figuresRouter)
 
 module.exports = router

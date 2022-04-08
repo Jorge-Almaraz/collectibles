@@ -21,6 +21,7 @@ router.put(
     validation(controllerValidations.updateValidations),
     figuresController.updateFigure
 )
+
 router.delete(
     '/:id',
     figuresController.destroyFigure

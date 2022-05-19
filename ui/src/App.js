@@ -5,6 +5,8 @@ import Login from "./views/Login";
 import Reports from "./views/Reports";
 import Users from "./views/Users";
 import Comics from "./views/Comics";
+import Figures from "./views/Figures";
+import Games from "./views/Games"
 import React from "react";
 import { getToken } from "./utils/session"
 
@@ -22,6 +24,8 @@ export default class App extends React.Component {
             <Route path="/" element={<Reports />}></Route>
             <Route path="/users" element={<Users />} />
             <Route path="/comics" element={<Comics />} />
+            <Route path="/figures" element={<Figures />} />
+            <Route path="/games" element={<Games />} />
           </Routes>
         </Container>
       </BrowserRouter>

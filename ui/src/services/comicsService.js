@@ -1,8 +1,6 @@
 
-
 import Requests from "../utils/requests"
 const axios = Requests.getAxios()
-
 
 export default class ComicsService {
   static getComics () {

@@ -28,6 +28,8 @@ function Header () {
         <Nav className="mr-auto">
           <Link to="/users" className={'nav-link'}>Users</Link>
           <Link to="/comics" className={'nav-link'}>Comics</Link>
+          <Link to="/figures" className={'nav-link'}>Figures</Link>
+          <Link to= "/games" className={'nav-link'}>Games</Link>
           <Link to="/" className={'nav-link'}>Reports</Link>
           <Button
             variant={"secondary"}

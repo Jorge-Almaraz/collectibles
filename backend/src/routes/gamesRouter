@@ -1,0 +1,30 @@
+
+const express = require('express')
+const { validation } = require('../utils/validation')
+const controllerValidations = require('../validations/games')
+const router = express.Router()
+const gamesController = require('../controllers/gamesController')
+
+router.get(
+    '/',
+    gamesController.getGames
+)
+
+router.post(
+    '/', 
+    validation(controllerValidations.createValidations),
+    gamesController.createGame
+)
+
+router.put(
+    '/:id',
+    validation(controllerValidations.updateValidations),
+    gamesController.updateGame
+)
+
+router.delete(
+    '/:id',
+    gamesController.destroyGame
+)
+
+module.exports  =router
